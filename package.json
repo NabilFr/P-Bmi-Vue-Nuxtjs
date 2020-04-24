@@ -1,0 +1,19 @@
+{
+  "name": "bmi-calculator",
+  "version": "1.0.0",
+  "description": "BMI calculator to test vue, tailwind and nuxt.js",
+  "author": "Nabil",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.0.0"
+  }
+}
