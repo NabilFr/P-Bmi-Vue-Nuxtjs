@@ -1,5 +1,5 @@
 <template>
-  <section class="grid grid-cols-2 gap-2 mb-6 text-center">
+  <section class="grid grid-cols-2 gap-2 mb-10 text-center">
     <div class="rounded-md shadow-md bg-gray-800 p-4 w-full">
       <p class="uppercase font-bold">Weight</p>
       <p class="text-5xl font-bold">{{ weight }}</p>
@@ -9,12 +9,16 @@
           @click="updateWeight(-1)"
           v-longclick="() => updateWeight(-1)"
           class="rounded-full bg-gray-900 h-12 w-12 text-2xl"
-        >-</button>
+        >
+          -
+        </button>
         <button
           @click="updateWeight(1)"
           v-longclick="() => updateWeight(1)"
           class="rounded-full bg-gray-900 h-12 w-12 text-2xl"
-        >+</button>
+        >
+          +
+        </button>
       </div>
     </div>
     <div class="rounded-md shadow-md bg-gray-800 p-4 w-full">
@@ -26,12 +30,16 @@
           @click="updateAge(-1)"
           v-longclick="() => updateAge(-1)"
           class="rounded-full bg-gray-900 h-12 w-12 text-2xl"
-        >-</button>
+        >
+          -
+        </button>
         <button
           @click="updateAge(1)"
           v-longclick="() => updateAge(1)"
           class="rounded-full bg-gray-900 h-12 w-12 text-2xl"
-        >+</button>
+        >
+          +
+        </button>
       </div>
     </div>
   </section>
