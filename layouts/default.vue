@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen font-sans bg-gray-900 text-white">
+  <div class="min-h-screen font-sans bg-gray-900 text-white pb-8">
     <navbar />
     <gender />
     <height />

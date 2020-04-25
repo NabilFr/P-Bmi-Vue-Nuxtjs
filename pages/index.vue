@@ -6,7 +6,9 @@
     <button
       @click="calculateBMI"
       class="bg-superpink font-bold uppercase p-4 fixed w-full bottom-0 left-0"
-    >Calculate your Bmi</button>
+    >
+      Calculate your Bmi
+    </button>
   </div>
 </template>
 
