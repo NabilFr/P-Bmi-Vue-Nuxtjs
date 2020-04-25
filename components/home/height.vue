@@ -1,6 +1,6 @@
 <template>
   <section class="rounded-md shadow-md bg-gray-800 p-4 text-center mb-6">
-    <p>HEIGHT</p>
+    <p class="font-bold">HEIGHT</p>
     <p class="text-5xl font-bold">
       {{ height }}
       <small class="text-sm">cm</small>
@@ -10,7 +10,7 @@
       min="120"
       max="215"
       v-model="height"
-      class="slider w-full h-1 rounded-lg outline-none opacity-75 transition-all duration-300 hover:opacity-100"
+      class="slider w-full h-1 rounded-lg outline-none"
     />
   </section>
 </template>
@@ -21,6 +21,11 @@ export default {
     return {
       height: 120
     };
+  },
+  watch: {
+    height: function() {
+      this.$emit("heightListener", parseInt(this.height));
+    }
   }
 };
 </script>

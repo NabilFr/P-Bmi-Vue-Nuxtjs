@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-lg bg-gray-800 py-6 px-4 flex items-center">
+  <div class="shadow-lg py-6 px-4 flex items-center">
     <div>
       <svg
         fill="none"
