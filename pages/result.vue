@@ -7,12 +7,15 @@
       <p class="text-gray-400 font-bold">{{ result.label }} BMI Range</p>
       <p>BMI {{ result.range }}</p>
       <p class="my-8 text-xl">{{ result.message }}</p>
-      <button @click="share" class="my-4 bg-gray-600 p-4 rounded w-full">SHARE</button>
+      <button @click="share" class="my-4 bg-gray-600 p-4 rounded w-full">
+        SHARE
+      </button>
     </div>
     <nuxt-link
       to="/"
       class="bg-superpink font-bold uppercase p-4 fixed text-center w-full bottom-0 left-0"
-    >RE Calculate BMI</nuxt-link>
+      >RE Calculate BMI</nuxt-link
+    >
   </div>
 </template>
 
@@ -25,8 +28,7 @@ export default {
           .share({
             title: `My BMI is ${this.bmi}`,
             text: "Checkout out how to code a BMI calculator",
-            url:
-              "https://dev.to/fayazara/let-s-code-a-dribble-design-with-vue-js-tailwindcss-working-demo-part-1-of-2-3h9"
+            url: "https://github.com/NabilFr"
           })
           .then(() => console.log("Successful share"))
           .catch(error => console.log("Error sharing", error));
